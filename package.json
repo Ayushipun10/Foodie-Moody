@@ -1,0 +1,11 @@
+{
+  "name": "foodie-moody",
+  "version": "1.0.0",
+  "description": "food app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ayushi",
+  "license": "ISC"
+}
