@@ -1,0 +1,22 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header-styling{
+    display: flex;
+    gap:70%;
+    align-items: center; 
+    height: 20%;
+    color: grey;
+ 
+}
+
+.logo-styling{
+    height: 60px;
+}
+.nav-items{
+   padding: 10%;
+}
+
