@@ -1,4 +1,3 @@
-
 *{
     padding: 0;
     margin: 0;
@@ -8,15 +7,21 @@
     display: flex;
     gap:70%;
     align-items: center; 
+    width: 100%;
     height: 20%;
     color: grey;
- 
+    padding: 0.5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px none  rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 
 .logo-styling{
     height: 60px;
 }
 .nav-items{
-   padding: 10%;
+  padding-right: 10px;
+
 }
+
 
