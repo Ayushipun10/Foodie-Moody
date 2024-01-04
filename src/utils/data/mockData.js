@@ -707,119 +707,105 @@ const restaurantslist = [
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
   {
-    "info": {
-      "id": "29820",
-      "name": "Biryani Blues",
-      "cloudinaryImageId": "jrngqwpq6swgs0qbtk3x",
-      "locality": "Sector 50",
-      "areaName": "Sector 50",
-      "costForTwo": "₹400 for two",
-      "cuisines": [
+    info: {
+      id: "29820",
+      name: "Biryani Blues",
+      cloudinaryImageId: "jrngqwpq6swgs0qbtk3x",
+      locality: "Sector 50",
+      areaName: "Sector 50",
+      costForTwo: "₹400 for two",
+      cuisines: [
         "Biryani",
         "Hyderabadi",
         "Lucknowi",
         "Kebabs",
         "Desserts",
-        "Beverages"
+        "Beverages",
       ],
-      "avgRating": 4.3,
-      "parentId": "13813",
-      "avgRatingString": "4.3",
-      "totalRatingsString": "10K+",
-      "sla": {
-        "deliveryTime": 14,
-        "lastMileTravel": 0.3,
-        "serviceability": "SERVICEABLE",
-        "slaString": "14 mins",
-        "lastMileTravelString": "0.3 km",
-        "iconType": "ICON_TYPE_EMPTY"
+      avgRating: 4.3,
+      parentId: "13813",
+      avgRatingString: "4.3",
+      totalRatingsString: "10K+",
+      sla: {
+        deliveryTime: 14,
+        lastMileTravel: 0.3,
+        serviceability: "SERVICEABLE",
+        slaString: "14 mins",
+        lastMileTravelString: "0.3 km",
+        iconType: "ICON_TYPE_EMPTY",
       },
-      "availability": {
-        "nextCloseTime": "2024-01-04 05:00:00",
-        "opened": true
+      availability: {
+        nextCloseTime: "2024-01-04 05:00:00",
+        opened: true,
       },
-      "badges": {
-        "textExtendedBadges": [
+      badges: {
+        textExtendedBadges: [
           {
-            "iconId": "guiltfree/GF_Logo_android_3x",
-            "shortDescription": "options available",
-            "fontColor": "#7E808C"
-          }
-        ]
+            iconId: "guiltfree/GF_Logo_android_3x",
+            shortDescription: "options available",
+            fontColor: "#7E808C",
+          },
+        ],
       },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            
-          },
-          "textBased": {
-            
-          },
-          "textExtendedBadges": {
-            "badgeObject": [
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {
+            badgeObject: [
               {
-                "attributes": {
-                  "description": "",
-                  "fontColor": "#7E808C",
-                  "iconId": "guiltfree/GF_Logo_android_3x",
-                  "shortDescription": "options available"
-                }
-              }
-            ]
-          }
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "₹125 OFF",
-        "subHeader": "ABOVE ₹199",
-        "discountTag": "FLAT DEAL"
-      },
-      "loyaltyDiscoverPresentationInfo": {
-        "logoCtx": {
-          "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
-        },
-        "freedelMessage": "FREE DELIVERY",
-        "badgeType": "BADGE_TYPE_ONE_LITE"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {
-            
+                attributes: {
+                  description: "",
+                  fontColor: "#7E808C",
+                  iconId: "guiltfree/GF_Logo_android_3x",
+                  shortDescription: "options available",
+                },
+              },
+            ],
           },
-          "video": {
-            
-          }
-        }
+        },
       },
-      "reviewsSummary": {
-        
+      aggregatedDiscountInfoV3: {
+        header: "₹125 OFF",
+        subHeader: "ABOVE ₹199",
+        discountTag: "FLAT DEAL",
       },
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {
-        
-      }
+      loyaltyDiscoverPresentationInfo: {
+        logoCtx: {
+          logo: "Swiggy%20One%20Lite/One_lite_vertical_logo.png",
+        },
+        freedelMessage: "FREE DELIVERY",
+        badgeType: "BADGE_TYPE_ONE_LITE",
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
     },
-    "analytics": {
-      
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/biryani-blues-sector-50-noida-1-29820",
+      type: "WEBLINK",
     },
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/biryani-blues-sector-50-noida-1-29820",
-      "type": "WEBLINK"
-    }
   },
   {
-    "info": {
-      "id": "329631",
-      "name": "Chai Point",
-      "cloudinaryImageId": "begx8kr5tx6yg2v59fqa",
-      "locality": "Sector 73",
-      "areaName": "Sector 72",
-      "costForTwo": "₹200 for two",
-      "cuisines": [
+    info: {
+      id: "329631",
+      name: "Chai Point",
+      cloudinaryImageId: "begx8kr5tx6yg2v59fqa",
+      locality: "Sector 73",
+      areaName: "Sector 72",
+      costForTwo: "₹200 for two",
+      cuisines: [
         "Bakery",
         "Beverages",
         "Maharashtrian",
@@ -835,749 +821,595 @@ const restaurantslist = [
         "Desserts",
         "Cafe",
         "Healthy Food",
-        "Home Food"
+        "Home Food",
       ],
-      "avgRating": 4.4,
-      "parentId": "1607",
-      "avgRatingString": "4.4",
-      "totalRatingsString": "5K+",
-      "sla": {
-        "deliveryTime": 35,
-        "lastMileTravel": 3,
-        "serviceability": "SERVICEABLE",
-        "slaString": "35 mins",
-        "lastMileTravelString": "3.0 km",
-        "iconType": "ICON_TYPE_EMPTY"
+      avgRating: 4.4,
+      parentId: "1607",
+      avgRatingString: "4.4",
+      totalRatingsString: "5K+",
+      sla: {
+        deliveryTime: 35,
+        lastMileTravel: 3,
+        serviceability: "SERVICEABLE",
+        slaString: "35 mins",
+        lastMileTravelString: "3.0 km",
+        iconType: "ICON_TYPE_EMPTY",
       },
-      "availability": {
-        "nextCloseTime": "2024-01-10 00:00:00",
-        "opened": true
+      availability: {
+        nextCloseTime: "2024-01-10 00:00:00",
+        opened: true,
       },
-      "badges": {
-        "textExtendedBadges": [
+      badges: {
+        textExtendedBadges: [
           {
-            "iconId": "guiltfree/GF_Logo_android_3x",
-            "shortDescription": "options available",
-            "fontColor": "#7E808C"
-          }
-        ]
+            iconId: "guiltfree/GF_Logo_android_3x",
+            shortDescription: "options available",
+            fontColor: "#7E808C",
+          },
+        ],
       },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            
-          },
-          "textBased": {
-            
-          },
-          "textExtendedBadges": {
-            "badgeObject": [
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {
+            badgeObject: [
               {
-                "attributes": {
-                  "description": "",
-                  "fontColor": "#7E808C",
-                  "iconId": "guiltfree/GF_Logo_android_3x",
-                  "shortDescription": "options available"
-                }
-              }
-            ]
-          }
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "₹125 OFF",
-        "subHeader": "ABOVE ₹249",
-        "discountTag": "FLAT DEAL"
-      },
-      "loyaltyDiscoverPresentationInfo": {
-        "logoCtx": {
-          "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
-        },
-        "freedelMessage": "FREE DELIVERY",
-        "badgeType": "BADGE_TYPE_ONE_LITE"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {
-            
+                attributes: {
+                  description: "",
+                  fontColor: "#7E808C",
+                  iconId: "guiltfree/GF_Logo_android_3x",
+                  shortDescription: "options available",
+                },
+              },
+            ],
           },
-          "video": {
-            
-          }
-        }
+        },
       },
-      "reviewsSummary": {
-        
+      aggregatedDiscountInfoV3: {
+        header: "₹125 OFF",
+        subHeader: "ABOVE ₹249",
+        discountTag: "FLAT DEAL",
       },
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {
-        
-      }
+      loyaltyDiscoverPresentationInfo: {
+        logoCtx: {
+          logo: "Swiggy%20One%20Lite/One_lite_vertical_logo.png",
+        },
+        freedelMessage: "FREE DELIVERY",
+        badgeType: "BADGE_TYPE_ONE_LITE",
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
     },
-    "analytics": {
-      
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/chai-point-sector-73-sector-72-noida-1-329631",
+      type: "WEBLINK",
     },
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/chai-point-sector-73-sector-72-noida-1-329631",
-      "type": "WEBLINK"
-    }
   },
   {
-    "info": {
-      "id": "250493",
-      "name": "Baskin Robbins - Ice Cream Desserts",
-      "cloudinaryImageId": "85ccae4e3576f9330af102c46ca85395",
-      "locality": "Golf Course",
-      "areaName": "Sector 41",
-      "costForTwo": "₹250 for two",
-      "cuisines": [
-        "Desserts",
-        "Ice Cream"
-      ],
-      "avgRating": 4.3,
-      "veg": true,
-      "parentId": "5588",
-      "avgRatingString": "4.3",
-      "totalRatingsString": "500+",
-      "sla": {
-        "deliveryTime": 23,
-        "lastMileTravel": 2.1,
-        "serviceability": "SERVICEABLE",
-        "slaString": "23 mins",
-        "lastMileTravelString": "2.1 km",
-        "iconType": "ICON_TYPE_EMPTY"
+    info: {
+      id: "250493",
+      name: "Baskin Robbins - Ice Cream Desserts",
+      cloudinaryImageId: "85ccae4e3576f9330af102c46ca85395",
+      locality: "Golf Course",
+      areaName: "Sector 41",
+      costForTwo: "₹250 for two",
+      cuisines: ["Desserts", "Ice Cream"],
+      avgRating: 4.3,
+      veg: true,
+      parentId: "5588",
+      avgRatingString: "4.3",
+      totalRatingsString: "500+",
+      sla: {
+        deliveryTime: 23,
+        lastMileTravel: 2.1,
+        serviceability: "SERVICEABLE",
+        slaString: "23 mins",
+        lastMileTravelString: "2.1 km",
+        iconType: "ICON_TYPE_EMPTY",
       },
-      "availability": {
-        "nextCloseTime": "2024-01-04 04:00:00",
-        "opened": true
+      availability: {
+        nextCloseTime: "2024-01-04 04:00:00",
+        opened: true,
       },
-      "badges": {
-        
-      },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            
-          },
-          "textBased": {
-            
-          },
-          "textExtendedBadges": {
-            
-          }
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "20% OFF",
-        "subHeader": "UPTO ₹50"
-      },
-      "loyaltyDiscoverPresentationInfo": {
-        "logoCtx": {
-          "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
         },
-        "freedelMessage": "FREE DELIVERY",
-        "badgeType": "BADGE_TYPE_ONE_LITE"
       },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {
-            
-          },
-          "video": {
-            
-          }
-        }
+      aggregatedDiscountInfoV3: {
+        header: "20% OFF",
+        subHeader: "UPTO ₹50",
       },
-      "reviewsSummary": {
-        
+      loyaltyDiscoverPresentationInfo: {
+        logoCtx: {
+          logo: "Swiggy%20One%20Lite/One_lite_vertical_logo.png",
+        },
+        freedelMessage: "FREE DELIVERY",
+        badgeType: "BADGE_TYPE_ONE_LITE",
       },
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {
-        
-      }
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
     },
-    "analytics": {
-      
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/baskin-robbins-ice-cream-desserts-golf-course-sector-41-noida-1-250493",
+      type: "WEBLINK",
     },
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/baskin-robbins-ice-cream-desserts-golf-course-sector-41-noida-1-250493",
-      "type": "WEBLINK"
-    }
   },
   {
-    "info": {
-      "id": "233551",
-      "name": "Sweet Truth - Cake and Desserts",
-      "cloudinaryImageId": "81cf6bfe2760a45a0caf2e28716ca4d7",
-      "locality": "Golf Course",
-      "areaName": "Sector 45",
-      "costForTwo": "₹450 for two",
-      "cuisines": [
-        "Snacks",
-        "Bakery",
-        "Desserts",
-        "Beverages"
-      ],
-      "avgRating": 4.3,
-      "parentId": "4444",
-      "avgRatingString": "4.3",
-      "totalRatingsString": "500+",
-      "sla": {
-        "deliveryTime": 25,
-        "lastMileTravel": 3,
-        "serviceability": "SERVICEABLE",
-        "slaString": "25 mins",
-        "lastMileTravelString": "3.0 km",
-        "iconType": "ICON_TYPE_EMPTY"
+    info: {
+      id: "233551",
+      name: "Sweet Truth - Cake and Desserts",
+      cloudinaryImageId: "81cf6bfe2760a45a0caf2e28716ca4d7",
+      locality: "Golf Course",
+      areaName: "Sector 45",
+      costForTwo: "₹450 for two",
+      cuisines: ["Snacks", "Bakery", "Desserts", "Beverages"],
+      avgRating: 4.3,
+      parentId: "4444",
+      avgRatingString: "4.3",
+      totalRatingsString: "500+",
+      sla: {
+        deliveryTime: 25,
+        lastMileTravel: 3,
+        serviceability: "SERVICEABLE",
+        slaString: "25 mins",
+        lastMileTravelString: "3.0 km",
+        iconType: "ICON_TYPE_EMPTY",
       },
-      "availability": {
-        "nextCloseTime": "2024-01-04 03:00:00",
-        "opened": true
+      availability: {
+        nextCloseTime: "2024-01-04 03:00:00",
+        opened: true,
       },
-      "badges": {
-        
-      },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            
-          },
-          "textBased": {
-            
-          },
-          "textExtendedBadges": {
-            
-          }
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "60% OFF",
-        "subHeader": "UPTO ₹110"
-      },
-      "loyaltyDiscoverPresentationInfo": {
-        "logoCtx": {
-          "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
         },
-        "freedelMessage": "FREE DELIVERY",
-        "badgeType": "BADGE_TYPE_ONE_LITE"
       },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {
-            
-          },
-          "video": {
-            
-          }
-        }
+      aggregatedDiscountInfoV3: {
+        header: "60% OFF",
+        subHeader: "UPTO ₹110",
       },
-      "reviewsSummary": {
-        
+      loyaltyDiscoverPresentationInfo: {
+        logoCtx: {
+          logo: "Swiggy%20One%20Lite/One_lite_vertical_logo.png",
+        },
+        freedelMessage: "FREE DELIVERY",
+        badgeType: "BADGE_TYPE_ONE_LITE",
       },
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {
-        
-      }
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
     },
-    "analytics": {
-      
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/sweet-truth-cake-and-desserts-golf-course-sector-45-noida-1-233551",
+      type: "WEBLINK",
     },
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/sweet-truth-cake-and-desserts-golf-course-sector-45-noida-1-233551",
-      "type": "WEBLINK"
-    }
   },
   {
-    "info": {
-      "id": "233552",
-      "name": "The Good Bowl",
-      "cloudinaryImageId": "6e04be27387483a7c00444f8e8241108",
-      "locality": "Golf Course",
-      "areaName": "Sector 45",
-      "costForTwo": "₹400 for two",
-      "cuisines": [
-        "Biryani",
-        "Pastas",
-        "Punjabi",
-        "Desserts",
-        "Beverages"
-      ],
-      "avgRating": 4.1,
-      "parentId": "7918",
-      "avgRatingString": "4.1",
-      "totalRatingsString": "500+",
-      "sla": {
-        "deliveryTime": 26,
-        "lastMileTravel": 3,
-        "serviceability": "SERVICEABLE",
-        "slaString": "26 mins",
-        "lastMileTravelString": "3.0 km",
-        "iconType": "ICON_TYPE_EMPTY"
+    info: {
+      id: "233552",
+      name: "The Good Bowl",
+      cloudinaryImageId: "6e04be27387483a7c00444f8e8241108",
+      locality: "Golf Course",
+      areaName: "Sector 45",
+      costForTwo: "₹400 for two",
+      cuisines: ["Biryani", "Pastas", "Punjabi", "Desserts", "Beverages"],
+      avgRating: 4.1,
+      parentId: "7918",
+      avgRatingString: "4.1",
+      totalRatingsString: "500+",
+      sla: {
+        deliveryTime: 26,
+        lastMileTravel: 3,
+        serviceability: "SERVICEABLE",
+        slaString: "26 mins",
+        lastMileTravelString: "3.0 km",
+        iconType: "ICON_TYPE_EMPTY",
       },
-      "availability": {
-        "nextCloseTime": "2024-01-04 03:00:00",
-        "opened": true
+      availability: {
+        nextCloseTime: "2024-01-04 03:00:00",
+        opened: true,
       },
-      "badges": {
-        
-      },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            
-          },
-          "textBased": {
-            
-          },
-          "textExtendedBadges": {
-            
-          }
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "60% OFF",
-        "subHeader": "UPTO ₹110"
-      },
-      "loyaltyDiscoverPresentationInfo": {
-        "logoCtx": {
-          "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
         },
-        "freedelMessage": "FREE DELIVERY",
-        "badgeType": "BADGE_TYPE_ONE_LITE"
       },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {
-            
-          },
-          "video": {
-            
-          }
-        }
+      aggregatedDiscountInfoV3: {
+        header: "60% OFF",
+        subHeader: "UPTO ₹110",
       },
-      "reviewsSummary": {
-        
+      loyaltyDiscoverPresentationInfo: {
+        logoCtx: {
+          logo: "Swiggy%20One%20Lite/One_lite_vertical_logo.png",
+        },
+        freedelMessage: "FREE DELIVERY",
+        badgeType: "BADGE_TYPE_ONE_LITE",
       },
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {
-        
-      }
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
     },
-    "analytics": {
-      
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/the-good-bowl-golf-course-sector-45-noida-1-233552",
+      type: "WEBLINK",
     },
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/the-good-bowl-golf-course-sector-45-noida-1-233552",
-      "type": "WEBLINK"
-    }
   },
   {
-    "info": {
-      "id": "16682",
-      "name": "Keventers - Milkshakes & Desserts",
-      "cloudinaryImageId": "89707df532fd993b3d79a1a28038a901",
-      "locality": "Golf Course",
-      "areaName": "Sector 41",
-      "costForTwo": "₹200 for two",
-      "cuisines": [
-        "Beverages",
-        "Ice Cream",
-        "Desserts",
-        "Healthy Food"
-      ],
-      "avgRating": 4.4,
-      "veg": true,
-      "parentId": "268997",
-      "avgRatingString": "4.4",
-      "totalRatingsString": "5K+",
-      "sla": {
-        "deliveryTime": 27,
-        "lastMileTravel": 2.1,
-        "serviceability": "SERVICEABLE",
-        "slaString": "27 mins",
-        "lastMileTravelString": "2.1 km",
-        "iconType": "ICON_TYPE_EMPTY"
+    info: {
+      id: "16682",
+      name: "Keventers - Milkshakes & Desserts",
+      cloudinaryImageId: "89707df532fd993b3d79a1a28038a901",
+      locality: "Golf Course",
+      areaName: "Sector 41",
+      costForTwo: "₹200 for two",
+      cuisines: ["Beverages", "Ice Cream", "Desserts", "Healthy Food"],
+      avgRating: 4.4,
+      veg: true,
+      parentId: "268997",
+      avgRatingString: "4.4",
+      totalRatingsString: "5K+",
+      sla: {
+        deliveryTime: 27,
+        lastMileTravel: 2.1,
+        serviceability: "SERVICEABLE",
+        slaString: "27 mins",
+        lastMileTravelString: "2.1 km",
+        iconType: "ICON_TYPE_EMPTY",
       },
-      "availability": {
-        "nextCloseTime": "2024-01-04 04:00:00",
-        "opened": true
+      availability: {
+        nextCloseTime: "2024-01-04 04:00:00",
+        opened: true,
       },
-      "badges": {
-        "textExtendedBadges": [
+      badges: {
+        textExtendedBadges: [
           {
-            "iconId": "guiltfree/GF_Logo_android_3x",
-            "shortDescription": "options available",
-            "fontColor": "#7E808C"
-          }
-        ]
+            iconId: "guiltfree/GF_Logo_android_3x",
+            shortDescription: "options available",
+            fontColor: "#7E808C",
+          },
+        ],
       },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            
-          },
-          "textBased": {
-            
-          },
-          "textExtendedBadges": {
-            "badgeObject": [
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {
+            badgeObject: [
               {
-                "attributes": {
-                  "description": "",
-                  "fontColor": "#7E808C",
-                  "iconId": "guiltfree/GF_Logo_android_3x",
-                  "shortDescription": "options available"
-                }
-              }
-            ]
-          }
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "60% OFF",
-        "subHeader": "UPTO ₹100"
-      },
-      "loyaltyDiscoverPresentationInfo": {
-        "logoCtx": {
-          "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
-        },
-        "freedelMessage": "FREE DELIVERY",
-        "badgeType": "BADGE_TYPE_ONE_LITE"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {
-            
+                attributes: {
+                  description: "",
+                  fontColor: "#7E808C",
+                  iconId: "guiltfree/GF_Logo_android_3x",
+                  shortDescription: "options available",
+                },
+              },
+            ],
           },
-          "video": {
-            
-          }
-        }
+        },
       },
-      "reviewsSummary": {
-        
+      aggregatedDiscountInfoV3: {
+        header: "60% OFF",
+        subHeader: "UPTO ₹100",
       },
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {
-        
-      }
+      loyaltyDiscoverPresentationInfo: {
+        logoCtx: {
+          logo: "Swiggy%20One%20Lite/One_lite_vertical_logo.png",
+        },
+        freedelMessage: "FREE DELIVERY",
+        badgeType: "BADGE_TYPE_ONE_LITE",
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
     },
-    "analytics": {
-      
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/keventers-milkshakes-and-desserts-golf-course-sector-41-noida-1-16682",
+      type: "WEBLINK",
     },
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/keventers-milkshakes-and-desserts-golf-course-sector-41-noida-1-16682",
-      "type": "WEBLINK"
-    }
   },
   {
-    "info": {
-      "id": "233550",
-      "name": "Firangi Bake",
-      "cloudinaryImageId": "dzhc8fffwn9ggdhv9ycq",
-      "locality": "Golf Course",
-      "areaName": "Sector 45",
-      "costForTwo": "₹400 for two",
-      "cuisines": [
+    info: {
+      id: "233550",
+      name: "Firangi Bake",
+      cloudinaryImageId: "dzhc8fffwn9ggdhv9ycq",
+      locality: "Golf Course",
+      areaName: "Sector 45",
+      costForTwo: "₹400 for two",
+      cuisines: [
         "Pizzas",
         "Pastas",
         "Italian",
         "Mexican",
         "Healthy Food",
         "Desserts",
-        "Beverages"
+        "Beverages",
       ],
-      "avgRating": 4.3,
-      "parentId": "3952",
-      "avgRatingString": "4.3",
-      "totalRatingsString": "100+",
-      "sla": {
-        "deliveryTime": 32,
-        "lastMileTravel": 3,
-        "serviceability": "SERVICEABLE",
-        "slaString": "32 mins",
-        "lastMileTravelString": "3.0 km",
-        "iconType": "ICON_TYPE_EMPTY"
+      avgRating: 4.3,
+      parentId: "3952",
+      avgRatingString: "4.3",
+      totalRatingsString: "100+",
+      sla: {
+        deliveryTime: 32,
+        lastMileTravel: 3,
+        serviceability: "SERVICEABLE",
+        slaString: "32 mins",
+        lastMileTravelString: "3.0 km",
+        iconType: "ICON_TYPE_EMPTY",
       },
-      "availability": {
-        "nextCloseTime": "2024-01-04 03:00:00",
-        "opened": true
+      availability: {
+        nextCloseTime: "2024-01-04 03:00:00",
+        opened: true,
       },
-      "badges": {
-        "textExtendedBadges": [
+      badges: {
+        textExtendedBadges: [
           {
-            "iconId": "guiltfree/GF_Logo_android_3x",
-            "shortDescription": "options available",
-            "fontColor": "#7E808C"
-          }
-        ]
+            iconId: "guiltfree/GF_Logo_android_3x",
+            shortDescription: "options available",
+            fontColor: "#7E808C",
+          },
+        ],
       },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            
-          },
-          "textBased": {
-            
-          },
-          "textExtendedBadges": {
-            "badgeObject": [
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {
+            badgeObject: [
               {
-                "attributes": {
-                  "description": "",
-                  "fontColor": "#7E808C",
-                  "iconId": "guiltfree/GF_Logo_android_3x",
-                  "shortDescription": "options available"
-                }
-              }
-            ]
-          }
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "60% OFF",
-        "subHeader": "UPTO ₹100"
-      },
-      "loyaltyDiscoverPresentationInfo": {
-        "logoCtx": {
-          "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
-        },
-        "freedelMessage": "FREE DELIVERY",
-        "badgeType": "BADGE_TYPE_ONE_LITE"
-      },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {
-            
+                attributes: {
+                  description: "",
+                  fontColor: "#7E808C",
+                  iconId: "guiltfree/GF_Logo_android_3x",
+                  shortDescription: "options available",
+                },
+              },
+            ],
           },
-          "video": {
-            
-          }
-        }
+        },
       },
-      "reviewsSummary": {
-        
+      aggregatedDiscountInfoV3: {
+        header: "60% OFF",
+        subHeader: "UPTO ₹100",
       },
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {
-        
-      }
+      loyaltyDiscoverPresentationInfo: {
+        logoCtx: {
+          logo: "Swiggy%20One%20Lite/One_lite_vertical_logo.png",
+        },
+        freedelMessage: "FREE DELIVERY",
+        badgeType: "BADGE_TYPE_ONE_LITE",
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
     },
-    "analytics": {
-      
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/firangi-bake-golf-course-sector-45-noida-1-233550",
+      type: "WEBLINK",
     },
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/firangi-bake-golf-course-sector-45-noida-1-233550",
-      "type": "WEBLINK"
-    }
   },
   {
-    "info": {
-      "id": "81478",
-      "name": "Rolls Mania",
-      "cloudinaryImageId": "gaan3kgwwk1qksdqzqvf",
-      "locality": "Harichand Complex",
-      "areaName": "Sector 72",
-      "costForTwo": "₹200 for two",
-      "cuisines": [
-        "Snacks",
-        "Beverages"
-      ],
-      "avgRating": 4.1,
-      "parentId": "171118",
-      "avgRatingString": "4.1",
-      "totalRatingsString": "5K+",
-      "sla": {
-        "deliveryTime": 24,
-        "lastMileTravel": 3,
-        "serviceability": "SERVICEABLE",
-        "slaString": "24 mins",
-        "lastMileTravelString": "3.0 km",
-        "iconType": "ICON_TYPE_EMPTY"
+    info: {
+      id: "81478",
+      name: "Rolls Mania",
+      cloudinaryImageId: "gaan3kgwwk1qksdqzqvf",
+      locality: "Harichand Complex",
+      areaName: "Sector 72",
+      costForTwo: "₹200 for two",
+      cuisines: ["Snacks", "Beverages"],
+      avgRating: 4.1,
+      parentId: "171118",
+      avgRatingString: "4.1",
+      totalRatingsString: "5K+",
+      sla: {
+        deliveryTime: 24,
+        lastMileTravel: 3,
+        serviceability: "SERVICEABLE",
+        slaString: "24 mins",
+        lastMileTravelString: "3.0 km",
+        iconType: "ICON_TYPE_EMPTY",
       },
-      "availability": {
-        "nextCloseTime": "2024-01-04 03:00:00",
-        "opened": true
+      availability: {
+        nextCloseTime: "2024-01-04 03:00:00",
+        opened: true,
       },
-      "badges": {
-        
-      },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            
-          },
-          "textBased": {
-            
-          },
-          "textExtendedBadges": {
-            
-          }
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "40% OFF",
-        "subHeader": "UPTO ₹80"
-      },
-      "loyaltyDiscoverPresentationInfo": {
-        "logoCtx": {
-          "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
         },
-        "freedelMessage": "FREE DELIVERY",
-        "badgeType": "BADGE_TYPE_ONE_LITE"
       },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {
-            
-          },
-          "video": {
-            
-          }
-        }
+      aggregatedDiscountInfoV3: {
+        header: "40% OFF",
+        subHeader: "UPTO ₹80",
       },
-      "reviewsSummary": {
-        
+      loyaltyDiscoverPresentationInfo: {
+        logoCtx: {
+          logo: "Swiggy%20One%20Lite/One_lite_vertical_logo.png",
+        },
+        freedelMessage: "FREE DELIVERY",
+        badgeType: "BADGE_TYPE_ONE_LITE",
       },
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {
-        
-      }
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
     },
-    "analytics": {
-      
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/rolls-mania-harichand-complex-sector-72-noida-1-81478",
+      type: "WEBLINK",
     },
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/rolls-mania-harichand-complex-sector-72-noida-1-81478",
-      "type": "WEBLINK"
-    }
   },
   {
-    "info": {
-      "id": "307486",
-      "name": "Mad Over Donuts",
-      "cloudinaryImageId": "524b746adaa25814f5d4f16745cbbc6b",
-      "locality": "D Block",
-      "areaName": "Sector 2",
-      "costForTwo": "₹200 for two",
-      "cuisines": [
-        "Desserts",
-        "Sweets",
-        "Bakery"
-      ],
-      "avgRating": 4.3,
-      "veg": true,
-      "parentId": "611",
-      "avgRatingString": "4.3",
-      "totalRatingsString": "1K+",
-      "sla": {
-        "deliveryTime": 28,
-        "lastMileTravel": 6.7,
-        "serviceability": "SERVICEABLE",
-        "slaString": "28 mins",
-        "lastMileTravelString": "6.7 km",
-        "iconType": "ICON_TYPE_EMPTY"
+    info: {
+      id: "307486",
+      name: "Mad Over Donuts",
+      cloudinaryImageId: "524b746adaa25814f5d4f16745cbbc6b",
+      locality: "D Block",
+      areaName: "Sector 2",
+      costForTwo: "₹200 for two",
+      cuisines: ["Desserts", "Sweets", "Bakery"],
+      avgRating: 4.3,
+      veg: true,
+      parentId: "611",
+      avgRatingString: "4.3",
+      totalRatingsString: "1K+",
+      sla: {
+        deliveryTime: 28,
+        lastMileTravel: 6.7,
+        serviceability: "SERVICEABLE",
+        slaString: "28 mins",
+        lastMileTravelString: "6.7 km",
+        iconType: "ICON_TYPE_EMPTY",
       },
-      "availability": {
-        "nextCloseTime": "2024-01-04 03:00:00",
-        "opened": true
+      availability: {
+        nextCloseTime: "2024-01-04 03:00:00",
+        opened: true,
       },
-      "badges": {
-        "imageBadges": [
+      badges: {
+        imageBadges: [
           {
-            "imageId": "v1695133679/badges/Pure_Veg111.png",
-            "description": "pureveg"
-          }
-        ]
+            imageId: "v1695133679/badges/Pure_Veg111.png",
+            description: "pureveg",
+          },
+        ],
       },
-      "isOpen": true,
-      "type": "F",
-      "badgesV2": {
-        "entityBadges": {
-          "imageBased": {
-            "badgeObject": [
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {
+            badgeObject: [
               {
-                "attributes": {
-                  "description": "pureveg",
-                  "imageId": "v1695133679/badges/Pure_Veg111.png"
-                }
-              }
-            ]
+                attributes: {
+                  description: "pureveg",
+                  imageId: "v1695133679/badges/Pure_Veg111.png",
+                },
+              },
+            ],
           },
-          "textBased": {
-            
-          },
-          "textExtendedBadges": {
-            
-          }
-        }
-      },
-      "aggregatedDiscountInfoV3": {
-        "header": "40% OFF",
-        "subHeader": "UPTO ₹80"
-      },
-      "loyaltyDiscoverPresentationInfo": {
-        "logoCtx": {
-          "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+          textBased: {},
+          textExtendedBadges: {},
         },
-        "freedelMessage": "FREE DELIVERY",
-        "badgeType": "BADGE_TYPE_ONE_LITE"
       },
-      "differentiatedUi": {
-        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-        "differentiatedUiMediaDetails": {
-          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-          "lottie": {
-            
-          },
-          "video": {
-            
-          }
-        }
+      aggregatedDiscountInfoV3: {
+        header: "40% OFF",
+        subHeader: "UPTO ₹80",
       },
-      "reviewsSummary": {
-        
+      loyaltyDiscoverPresentationInfo: {
+        logoCtx: {
+          logo: "Swiggy%20One%20Lite/One_lite_vertical_logo.png",
+        },
+        freedelMessage: "FREE DELIVERY",
+        badgeType: "BADGE_TYPE_ONE_LITE",
       },
-      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-      "restaurantOfferPresentationInfo": {
-        
-      }
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      restaurantOfferPresentationInfo: {},
     },
-    "analytics": {
-      
+    analytics: {},
+    cta: {
+      link: "https://www.swiggy.com/restaurants/mad-over-donuts-d-block-sector-2-noida-1-307486",
+      type: "WEBLINK",
     },
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/mad-over-donuts-d-block-sector-2-noida-1-307486",
-      "type": "WEBLINK"
-    }
   },
 ];
-export default restaurantslist
+export default restaurantslist;

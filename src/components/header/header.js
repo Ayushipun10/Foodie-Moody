@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style.css"
+import "./Header.css"
 import logo from '../../../Images/logo.jpeg'
 import { FaSearch } from "react-icons/fa";
 import { CgPokemon } from "react-icons/cg";

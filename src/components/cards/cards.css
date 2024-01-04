@@ -29,7 +29,8 @@
 .details-styling{
     margin: 1% 5%;
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: medium;
+    font-size: larger;
+    overflow: hidden;
     white-space: nowrap;
     text-overflow:ellipsis;
 }
