@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './header/Header'
 import  ReactDOM  from 'react-dom/client'
-import Filter from './filter/filter'
 import Body from './cards/RestaurantBody'
+import Filter from './filter/filter'
 
 const App = () => {
+
+  const [selectedCategory, setSelectedCategory] = useState()
+  console.log("slectedCategioryconsole", selectedCategory)
   return (
   <>
    <Header/>
-   <Filter/>
-   <Body/>
+   <Filter setSelectedCategory={setSelectedCategory}/>
+   <Body selectedCategory={selectedCategory}/>
    </>
   )
 }

@@ -1,10 +1,13 @@
 .res-container{
-    margin: 2%  8%;
+    margin: 1%;
+    /* margin: 2%  8%; */
     display: flex;
     flex-wrap: wrap;
-    gap: 1%;
-    width: 100%;
-   
+    gap: 6%;
+    /* width: 100%; */
+    box-shadow: 0px 2px 4px rgba(0, 0,0, 0.1);
+    border: 1px none rgba(0,0,0,0.1);
+    border-radius: 15px;
 }
 
 .res-card{
@@ -43,4 +46,12 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow:ellipsis;
+}
+.rating-delivery{
+    display: flex;
+    gap: 5%;
+}
+.delivery::before{
+    content:"• ";
+    
 }
