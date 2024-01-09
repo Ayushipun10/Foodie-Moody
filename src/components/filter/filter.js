@@ -8,10 +8,11 @@ const Filter = (props) => {
   const {setSelectedCategory} = props;
 
   const filtercuisine = (category) => {
-
-    const filterCards = restaurantslist.filter((item)=> item.info.cuisines.includes(category) || item.info.cuisines.includes(category + "s")) 
-    setSelectedCategory(filterCards)
-    // setSelectedCategory(category);
+ 
+    // const filterCards = restaurantslist.filter((item)=> item.info.cuisines.includes(category) || item.info.cuisines.includes(category + "s")) 
+   
+    // setSelectedCategory(filterCards)
+    setSelectedCategory(category);
 
    
   }

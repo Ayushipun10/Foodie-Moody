@@ -7,7 +7,7 @@ import Filter from './filter/filter'
 const App = () => {
 
   const [selectedCategory, setSelectedCategory] = useState()
-  console.log("slectedCategioryconsole", selectedCategory)
+ 
   return (
   <>
    <Header/>
