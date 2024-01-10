@@ -1,0 +1,36 @@
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3%;
+    gap: 6%;
+}
+
+.shimmer-cards-styling{
+    margin: 3% 1%;
+    width: 18%;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 1px none rgba(0,0,0,0.1);
+    border-radius: 5%;
+}
+.shimmer-inner-card{
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    border: 1px none rgba(0,0,0,0.1);
+    border-radius: 5%;
+}
+.shimmer-inner-firstline{
+    margin: 2%;
+    width: 70%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+}
+.shimmer-inner-secondline{
+    margin: 2%;
+    width: 40%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+}

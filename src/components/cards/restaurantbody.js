@@ -2,11 +2,12 @@ import RestaurantCard from "./RestaurantCard";
 import "./Cards.css";
 import { useEffect, useState } from "react";
 import restaurantslist from "../../utils/data/mockData";
+import Shimmer from "../shimmer/shimmer";
 
 const Body = (props) => {
   const { selectedCategory } = props;
 
-  const [listofRestaurant, setListofRestaurant] = useState([]);
+  const [listofRestaurant, setListofRestaurant] = useState([ ]);
 
   useEffect(() => {
     fetchData();
@@ -18,22 +19,27 @@ const Body = (props) => {
     );
     const json = await data.json();
 
-    
     setListofRestaurant(
-      json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-
-    
   };
 
   // const filterCards = selectedCategory ? selectedCategory : restaurantslist;
 
-  const filterCards = selectedCategory ? listofRestaurant.filter((item)=> item.info.cuisines.includes(selectedCategory) || item.info.cuisines.includes(selectedCategory + "s")) : listofRestaurant
+  const filterCards = selectedCategory
+    ? listofRestaurant.filter(
+        (item) =>
+          item.info.cuisines.includes(selectedCategory) ||
+          item.info.cuisines.includes(selectedCategory + "s")
+      )
+    : listofRestaurant;
 
-  if(listofRestaurant.length === 0){
-    return <h1>Loading....</h1>
-  }
-  return (
+
+  
+  // if(listofRestaurant.length === 0){
+  //   return <Shimmer/>
+  // }
+  return listofRestaurant.length === 0 ? (<Shimmer />):(
     <>
       <div className="res-container">
         {filterCards.map((resDataItem) => (
