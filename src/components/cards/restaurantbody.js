@@ -5,11 +5,10 @@ import restaurantslist from "../../utils/data/mockData";
 import Shimmer from "../shimmer/shimmer";
 
 const Body = (props) => {
-  const { selectedCategory, inputSearchValue} = props;
+  const { selectedCategory, inputSearchValue } = props;
 
   const [listofRestaurant, setListofRestaurant] = useState([]);
- 
-
+  const [filteredList, setFilteredList] = useState([])
 
   useEffect(() => {
     fetchData();
@@ -24,12 +23,16 @@ const Body = (props) => {
     setListofRestaurant(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
+    setFilteredList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
   };
 
-  const search =  inputSearchValue ? listofRestaurant.filter((item) => item.info.name.toLowerCase().includes(inputSearchValue.toLowerCase())) : listofRestaurant
-  
-  // const filterCards = selectedCategory ? selectedCategory : restaurantslist;
+  const search = inputSearchValue
+    ? listofRestaurant.filter((item) =>
+        item.info.name.toLowerCase().includes(inputSearchValue.toLowerCase())
+      )
+    : listofRestaurant;
 
+  // const filterCards = selectedCategory ? selectedCategory : restaurantslist;
 
   const cuisineFilter = selectedCategory
     ? listofRestaurant.filter(
@@ -39,14 +42,15 @@ const Body = (props) => {
       )
     : listofRestaurant;
 
-  //  const filteredRestaurant =  search.length>0 && cuisineFilter.length>0 ? search && cuisineFilter :listofRestaurant
-
-    
   
+
+  //  const filteredRestaurant =  search || cuisineFilter
   // if(listofRestaurant.length === 0){
   //   return <Shimmer/>
   // }
-  return listofRestaurant.length === 0 ? (<Shimmer />):(
+  return listofRestaurant.length === 0 ? (
+    <Shimmer />
+  ) : (
     <>
       <div className="res-container">
         {cuisineFilter.map((resDataItem) => (
