@@ -5,11 +5,11 @@ import { useState } from "react";
 
 const Filter = (props) => {
 
-  const {setSelectedCategory} = props;
+  const {setSelectedCategory, listofRestaurant, setListofRestaurant} = props;
 
   const filtercuisine = (category) => {
  
-    // const filterCards = restaurantslist.filter((item)=> item.info.cuisines.includes(category) || item.info.cuisines.includes(category + "s")) 
+    // const filterCards = listofRestaurant.filter((item)=> item.info.cuisines.includes(category) || item.info.cuisines.includes(category + "s")) 
    
     // setSelectedCategory(filterCards)
     setSelectedCategory(category);

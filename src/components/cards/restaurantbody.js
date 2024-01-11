@@ -5,9 +5,11 @@ import restaurantslist from "../../utils/data/mockData";
 import Shimmer from "../shimmer/shimmer";
 
 const Body = (props) => {
-  const { selectedCategory } = props;
+  const { selectedCategory, inputSearchValue} = props;
 
-  const [listofRestaurant, setListofRestaurant] = useState([ ]);
+  const [listofRestaurant, setListofRestaurant] = useState([]);
+ 
+
 
   useEffect(() => {
     fetchData();
@@ -24,9 +26,12 @@ const Body = (props) => {
     );
   };
 
+  const search =  inputSearchValue ? listofRestaurant.filter((item) => item.info.name.toLowerCase().includes(inputSearchValue.toLowerCase())) : listofRestaurant
+  
   // const filterCards = selectedCategory ? selectedCategory : restaurantslist;
 
-  const filterCards = selectedCategory
+
+  const cuisineFilter = selectedCategory
     ? listofRestaurant.filter(
         (item) =>
           item.info.cuisines.includes(selectedCategory) ||
@@ -34,7 +39,9 @@ const Body = (props) => {
       )
     : listofRestaurant;
 
+  //  const filteredRestaurant =  search.length>0 && cuisineFilter.length>0 ? search && cuisineFilter :listofRestaurant
 
+    
   
   // if(listofRestaurant.length === 0){
   //   return <Shimmer/>
@@ -42,7 +49,7 @@ const Body = (props) => {
   return listofRestaurant.length === 0 ? (<Shimmer />):(
     <>
       <div className="res-container">
-        {filterCards.map((resDataItem) => (
+        {cuisineFilter.map((resDataItem) => (
           <RestaurantCard key={resDataItem.info.id} resData={resDataItem} />
         ))}
         {/* <RestaurantCard resData={restaurantslist[0]}/> */}
