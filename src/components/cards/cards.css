@@ -3,17 +3,23 @@
     /* margin: 2%  8%; */
     display: flex;
     flex-wrap: wrap;
-    gap: 6%;
+    gap: 17%;
     /* width: 100%; */
     box-shadow: 0px 2px 4px rgba(0, 0,0, 0.1);
-    border: 1px none rgba(0,0,0,0.1);
+    border: 1px none #0000001a;
     border-radius: 15px;
+    
 }
+.link-card-styling{
+    text-decoration: none;
+    color: gray;
+}
+
 
 .res-card{
     margin: 1%;
-    width: 18%;
-    max-height: 350px;
+    width: 260px;
+    height: 350px;
     /* box-shadow: 0px 2px 4px rgba(0, 0,0, 0.1);  */
     border: 1px none rgba(0,0,0,0.1);
     border-radius: 5%;

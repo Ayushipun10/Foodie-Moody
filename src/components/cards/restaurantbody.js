@@ -3,12 +3,13 @@ import "./Cards.css";
 import { useEffect, useState } from "react";
 import restaurantslist from "../../utils/data/mockData";
 import Shimmer from "../shimmer/shimmer";
+import { Link } from "react-router-dom";
 
 const Body = (props) => {
   const { selectedCategory, inputSearchValue } = props;
 
   const [listofRestaurant, setListofRestaurant] = useState([]);
-  const [filteredList, setFilteredList] = useState([])
+  const [filteredList, setFilteredList] = useState([]);
 
   useEffect(() => {
     fetchData();
@@ -23,7 +24,9 @@ const Body = (props) => {
     setListofRestaurant(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
-    setFilteredList(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    setFilteredList(
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    );
   };
 
   const search = inputSearchValue
@@ -42,8 +45,6 @@ const Body = (props) => {
       )
     : listofRestaurant;
 
-  
-
   //  const filteredRestaurant =  search || cuisineFilter
   // if(listofRestaurant.length === 0){
   //   return <Shimmer/>
@@ -54,7 +55,9 @@ const Body = (props) => {
     <>
       <div className="res-container">
         {cuisineFilter.map((resDataItem) => (
-          <RestaurantCard key={resDataItem.info.id} resData={resDataItem} />
+          <Link to={"/restaurants/" + resDataItem.info.id} key={resDataItem.info.id} className="link-card-styling">
+            <RestaurantCard resData={resDataItem} />
+          </Link>
         ))}
         {/* <RestaurantCard resData={restaurantslist[0]}/> */}
       </div>
