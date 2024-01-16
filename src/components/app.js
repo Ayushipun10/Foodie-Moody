@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HelpPage from "./help/help";
 import CartPage from "./cart/cart";
 import ErrorPage from "./error/error";
+import RestaturantMenu from "./menu/restaurantmenu";
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState();
@@ -29,7 +30,7 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
-    errorElement: <ErrorPage/>
+    errorElement: <ErrorPage/>,
   },
   {
     path:"/help",
@@ -38,7 +39,11 @@ const appRouter = createBrowserRouter([
   {
     path:"/cart",
     element: <CartPage />
-  }
+  },
+  {
+    path: "/restaurants/:resId",
+    element: <RestaturantMenu/>
+  },
 ])
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

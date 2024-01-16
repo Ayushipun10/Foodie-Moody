@@ -1,6 +1,11 @@
+import Header from "../header/Header";
+
 const CartPage = () => {
     return(
-        <div>Cart Page</div>
+        <>
+        <Header />
+        <div>Cart Page</div></>
+        
     )
 }
 export default CartPage;

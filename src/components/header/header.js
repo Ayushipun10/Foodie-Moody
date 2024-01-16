@@ -6,6 +6,7 @@ import { CgPokemon } from "react-icons/cg";
 import { FaRegUser } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import Search from "../search/search";
+import {Link} from "react-router-dom";
 
 const Header = ({setInputSearchValue}) => {
 
@@ -35,19 +36,19 @@ const Header = ({setInputSearchValue}) => {
   return (
     <>
       <header className="header-styling">
-        <img src={logo} className="logo-styling" />
-        <nav>
-          <a className="nav-items">
+        <Link to="/"><img src={logo} className="logo-styling" /></Link>
+        <div className="nav-container">
+          <li className="nav-items">
             {showComponent && <Search setSearchTextProps={setSearchTextProps} />}
             {<FaSearch onClick={searchFilter} />} {searchHeading}{" "}
-          </a>
-          <a className="nav-items">{<CgPokemon />} Help</a>
-          <a className="nav-items" onClick={() => login()}>
+          </li>
+          <li className="nav-items"><Link to="/help">{<CgPokemon />} Help</Link></li>
+          <li className="nav-items" onClick={() => login()}>
             {<FaRegUser />}
             {loginButton}
-          </a>
-          <a className="nav-items">{<IoCartOutline />} Cart</a>
-        </nav>
+          </li>
+          <li className="nav-items"><Link to="/cart">{<IoCartOutline />} Cart</Link></li>
+        </div>
       </header>
     </>
   );
