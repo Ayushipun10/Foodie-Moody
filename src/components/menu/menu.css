@@ -1,0 +1,40 @@
+.menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.restaurant-main-title{
+    width: 60%;
+    margin: 1%;
+    border-bottom: 2px dotted #0000001a;
+    /* box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    border-radius: 15px; */
+    
+}
+.menu-cards-recommended{
+    width: 60%;
+    margin: 1%;
+    border-bottom: 6px solid #0000001a;
+}
+.menu-text{
+    color: gray;  
+}
+.menu-text-card{
+    list-style: none;
+    color: gray;
+    padding: 3%;
+    border-bottom: 2px dotted #0000001a;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-image{
+   
+    width: 100px;
+    border-radius: 8px;
+   height: 80px;
+}
+.dish-recom-name{
+    color: black;
+}

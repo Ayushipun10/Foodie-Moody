@@ -1,29 +1,27 @@
 import Header from "../header/Header";
 import { useEffect, useState } from "react";
 import Shimmer from "../shimmer/shimmer";
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { MENU_API } from "../../utils/constants";
+import "./menu.css";
+import { CDN_URL } from "../../utils/constants";
 
 const RestaturantMenu = () => {
   const [restaurantMenuInfo, setRestaurantMenuInfo] = useState(null);
 
-  const {resId} = useParams();
+  const { resId } = useParams();
 
   useEffect(() => {
     fetchMenuData();
   }, []);
 
   const fetchMenuData = async () => {
-    const data = await fetch(
-    MENU_API+ resId 
-    );
+    const data = await fetch(MENU_API + resId);
 
     const json = await data.json();
 
     setRestaurantMenuInfo(json.data);
   };
-
-  
 
   console.log("menu data", restaurantMenuInfo);
 
@@ -36,26 +34,46 @@ const RestaturantMenu = () => {
 
   const { itemCards } =
     restaurantMenuInfo?.cards?.[2]?.groupedCard?.cardGroupMap?.REGULAR
-      ?.cards?.[1]?.card?.card;
+      ?.cards?.[2]?.card?.card;
 
   return (
     <>
       <div>
         <Header />
-        <h1>{name}</h1>
-        <h2>{cuisines.join(", ")}</h2>
-        <h2>{areaName}</h2>
-        <h3>
-          {
-            restaurantMenuInfo?.cards?.[2]?.groupedCard?.cardGroupMap?.REGULAR
-              ?.cards?.[1]?.card?.card?.title
-          }
-        </h3>
-        <ul>
-          {itemCards.map((item) => (
-            <li key={item?.card?.info?.id}>{item?.card?.info?.name} - ₹{(item?.card?.info?.variantsV2.pricingModels?.[0].price/100) || (item?.card?.info?.price/100)}</li>
-          ))}
-        </ul>
+      </div>
+      <div className="menu-container">
+        <div className="restaurant-main-title">
+          <h1 className="heading-menu">{name}</h1>
+          <h4 className="menu-text">{cuisines.join(", ")}</h4>
+          <h4 className="menu-text">{areaName}</h4>
+        </div>
+        <div className="menu-cards-recommended">
+          <h3>
+            {
+              restaurantMenuInfo?.cards?.[2]?.groupedCard?.cardGroupMap?.REGULAR
+                ?.cards?.[1]?.card?.card?.title
+            }
+          </h3>
+
+          <ul >
+            {itemCards.map((item) => (
+
+              <li key={item?.card?.info?.id} className="menu-text-card">
+                <div>
+                <div className="dish-recom-name">{item?.card?.info?.name}</div> 
+                <div>
+                ₹{item?.card?.info?.variantsV2.pricingModels?.[0].price / 100 ||
+                  item?.card?.info?.price / 100}
+                </div>
+                <div>{item?.card?.info?.description}</div>
+                </div>
+                <div>
+                <img src={CDN_URL+item?.card?.info?.imageId} className="menu-image"/>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
         {/* item?.card?.info?.variantsV2.pricingModels[0].price */}
         {/* <ul>
                     <li>{itemCards[0].card?.info?.name}</li>
