@@ -31,7 +31,7 @@ const Header = ({setInputSearchValue}) => {
       ? setSearchHeading("")
       : setSearchHeading("Search");
 
-    setInputSearchValue(searchTextValue);
+    // setInputSearchValue(searchTextValue);
   }
   return (
     <>
