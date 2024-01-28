@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import restaurantslist from "../../utils/data/mockData";
 import Shimmer from "../shimmer/shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../../utils/hooks/useOnlineStatus";
 
 const Body = (props) => {
   const { selectedCategory, inputSearchValue } = props;
@@ -49,6 +50,12 @@ const Body = (props) => {
   // if(listofRestaurant.length === 0){
   //   return <Shimmer/>
   // }
+
+
+  const onlineStatus = useOnlineStatus();
+
+  if (onlineStatus === false) return <h1>Looks Like You're Offline!! Please Check Your Connection🤔</h1>
+  
   return listofRestaurant.length === 0 ? (
     <Shimmer />
   ) : (

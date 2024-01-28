@@ -21,7 +21,7 @@ const RestaturantMenu = () => {
 
   const { itemCards } =
     restaurantMenuInfo?.cards?.[2]?.groupedCard?.cardGroupMap?.REGULAR
-      ?.cards?.[1]?.card?.card;
+      ?.cards?.[2]?.card?.card;
 
   return (
     <>
@@ -66,12 +66,6 @@ const RestaturantMenu = () => {
             ))}
           </ul>
         </div>
-        {/* item?.card?.info?.variantsV2.pricingModels[0].price */}
-        {/* <ul>
-                    <li>{itemCards[0].card?.info?.name}</li>
-                    <li>Burgers</li>
-                    <li>Diet Coke</li>
-                </ul> */}
       </div>
     </>
   );

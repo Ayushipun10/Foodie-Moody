@@ -1,14 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
 import Header from "./header/Header";
 import ReactDOM from "react-dom/client";
 import Body from "./cards/RestaurantBody";
 import Filter from "./filter/filter";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HelpPage from "./help/help";
+// import HelpPage from "./help/help";
 import CartPage from "./cart/cart";
 import ErrorPage from "./error/error";
 import RestaturantMenu from "./menu/restaurantmenu";
+
+
+const HelpPage = lazy(()=> import("./help/help"));
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState();
@@ -34,7 +37,7 @@ const appRouter = createBrowserRouter([
   },
   {
     path:"/help",
-    element: <HelpPage />
+    element:<Suspense fallback={<h1>Loading...</h1>}><HelpPage /></Suspense> 
   },
   {
     path:"/cart",
