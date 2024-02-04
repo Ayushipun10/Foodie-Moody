@@ -5,30 +5,35 @@ import restaurantslist from "../../utils/data/mockData";
 import Shimmer from "../shimmer/shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../../utils/hooks/useOnlineStatus";
+import useRestaurantCard from "../../utils/hooks/useRestaurantCard";
 
 const Body = (props) => {
   const { selectedCategory, inputSearchValue } = props;
 
-  const [listofRestaurant, setListofRestaurant] = useState([]);
-  const [filteredList, setFilteredList] = useState([]);
+  // const [listofRestaurant, setListofRestaurant] = useState([]);
+  // const [filteredList, setFilteredList] = useState([]);
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
-  const fetchData = async () => {
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.57142083264392&lng=77.3638055473566&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
-    const json = await data.json();
+  // const fetchData = async () => {
+  //   const data = await fetch(
+  //     "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.57142083264392&lng=77.3638055473566&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+  //   );
+  //   const json = await data.json();
 
-    setListofRestaurant(
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
-    setFilteredList(
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    );
-  };
+  //   console.log("cards sponsored data", json);
+
+  //   setListofRestaurant(
+  //     json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+  //   );
+  //   setFilteredList(
+  //     json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+  //   );
+  // };
+
+  const listofRestaurant = useRestaurantCard();
 
   const search = inputSearchValue
     ? listofRestaurant.filter((item) =>
@@ -55,7 +60,7 @@ const Body = (props) => {
   const onlineStatus = useOnlineStatus();
 
   if (onlineStatus === false) return <h1>Looks Like You're Offline!! Please Check Your Connection🤔</h1>
-  
+
   return listofRestaurant.length === 0 ? (
     <Shimmer />
   ) : (
