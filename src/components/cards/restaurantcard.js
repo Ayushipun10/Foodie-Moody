@@ -1,6 +1,6 @@
 import { CDN_URL } from "../../utils/constants";
 import "./Cards.css";
-
+import "../../../src/index.css";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
@@ -8,7 +8,7 @@ const RestaurantCard = (props) => {
   const { cloudinaryImageId, name, avgRating, cuisines, locality } =
     resData?.info;
 
-  const {deliveryTime} = resData?.info?.sla
+  const { deliveryTime } = resData?.info?.sla;
 
   return (
     <>
@@ -20,7 +20,7 @@ const RestaurantCard = (props) => {
           <h4>⭐️{avgRating}</h4>
           <h4 className="delivery">{deliveryTime} mins</h4>
         </div>
-      
+
         <div className="details-styling font-sty cuisine-sty">
           {cuisines.join(", ")}
         </div>
@@ -29,4 +29,22 @@ const RestaurantCard = (props) => {
     </>
   );
 };
+
+export const WithOfferLabel = (RestaurantCard) => {
+  return (props) => {
+    return (
+      <div className="relative">
+        <label className="text-white text-xl absolute text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-2/4 w-full font-extrabold py-1 z-10 overflow-hidden">
+          {props.resData.info.aggregatedDiscountInfoV3.header +
+            " " +
+            (props.resData.info.aggregatedDiscountInfoV3.subHeader
+              ? props.resData.info.aggregatedDiscountInfoV3.subHeader
+              : "")}
+        </label>
+        <RestaurantCard {...props} />
+      </div>
+    );
+  };
+};
+
 export default RestaurantCard;

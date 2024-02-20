@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const useRestaurantCard = () => {
+const useRestaurantCardData = () => {
     
 
     const [listofRestaurant, setListofRestaurant] = useState([])
@@ -21,4 +21,4 @@ const useRestaurantCard = () => {
     
 }
 
-export default useRestaurantCard;
+export default useRestaurantCardData;
