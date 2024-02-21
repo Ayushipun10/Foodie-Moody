@@ -8,7 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import HelpPage from "./help/help";
 import CartPage from "./cart/cart";
 import ErrorPage from "./error/error";
-import RestaturantMenu from "./menu/restaurantmenu";
+import RestaturantMenu from "./menu/RestaurantMenu";
 
 
 const HelpPage = lazy(()=> import("./help/help"));

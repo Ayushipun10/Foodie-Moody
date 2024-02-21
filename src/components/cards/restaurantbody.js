@@ -12,8 +12,7 @@ const Body = (props) => {
 
   const listofRestaurant = useRestaurantCardData();
 
-  console.log("for higher", listofRestaurant);
-
+ 
   const RestaurantCardOffer = WithOfferLabel(RestaurantCard);
 
   const search = inputSearchValue

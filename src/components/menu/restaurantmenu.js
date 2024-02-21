@@ -6,6 +6,7 @@ import useRestaurantMenu from "../../utils/hooks/useRestaurantMenu";
 
 import "./menu.css";
 import { CDN_URL } from "../../utils/constants";
+import RestaturantMenuCategory from "./RestaurantMenuCategory";
 
 const RestaturantMenu = () => {
   const { resId } = useParams();
@@ -17,12 +18,26 @@ const RestaturantMenu = () => {
   }
 
   const { name, cuisines, areaName } =
-    restaurantMenuInfo?.cards[0]?.card?.card?.info;
+    restaurantMenuInfo?.cards[2]?.card?.card?.info;
 
-  const { itemCards } =
-    restaurantMenuInfo?.cards?.[2]?.groupedCard?.cardGroupMap?.REGULAR
-      ?.cards?.[2]?.card?.card;
+  const itemCards =
+    restaurantMenuInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[2]
+      ?.card?.card?.itemCards;
 
+  const categories =
+    restaurantMenuInfo?.cards?.[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+      (c) =>
+        c.card?.card?.["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+    ) ||
+    restaurantMenuInfo?.cards?.[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+      (c) =>
+        c.card?.card?.["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+    ) ||
+    [];
+
+  console.log("again data checking", categories);
   return (
     <>
       <div>
@@ -35,9 +50,17 @@ const RestaturantMenu = () => {
           <h4 className="menu-text">{areaName}</h4>
         </div>
         <div className="menu-cards-recommended">
+          {categories.map((categorymenu, index) => (
+            <RestaturantMenuCategory
+              data={categorymenu?.card?.card}
+              key={index}
+            />
+          ))}
+        </div>
+        {/* <div className="menu-cards-recommended">
           <h3>
             {
-              restaurantMenuInfo?.cards?.[2]?.groupedCard?.cardGroupMap?.REGULAR
+              restaurantMenuInfo?.cards?.[4]?.groupedCard?.cardGroupMap?.REGULAR
                 ?.cards?.[1]?.card?.card?.title
             }
           </h3>
@@ -65,7 +88,7 @@ const RestaturantMenu = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
     </>
   );
