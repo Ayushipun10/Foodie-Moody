@@ -6,24 +6,30 @@ const MenuItemsList = ({ items }) => {
       <ul>
         {items.map((menuitems) => (
           <li
-            className="border-b-2 border-dotted flex justify-between #282c3f73 items-center leading-loose " 
+            className="border-b-2 border-dotted flex justify-between #282c3f73 items-center leading-loose "
             key={menuitems?.card?.info?.id}
           >
             <div className="w-[80%] p-2">
               <div className="font-bold ">{menuitems.card.info.name}</div>
-              <div >
+              <div>
                 ₹
                 {menuitems?.card?.info?.variantsV2.pricingModels?.[0].price /
                   100 || menuitems?.card?.info?.price / 100}
               </div>
-              <div className="text-sm text-[#282c3f73] leading-relaxed">{menuitems?.card?.info?.description}</div>
-            </div>
-            <div>
-             
-              <div className="absolute">
-               <button className="border-black bg-green-100  ">Add +</button>
+              <div className="text-sm text-[#282c3f73] leading-relaxed">
+                {menuitems?.card?.info?.description}
               </div>
-              <img src={CDN_URL + menuitems?.card?.info?.imageId} className="w-[100px] h-[80px] rounded-md m-2 "/>
+            </div>
+            <div className="relative flex justify-center items-end">
+              <div className="absolute ">
+                <button className=" bg-white w-[80px] text-[#60b246] font-arial rounded-md border-solid border-[#60b246] border">
+                  ADD 
+                </button>
+              </div>
+              <img
+                src={CDN_URL + menuitems?.card?.info?.imageId}
+                className="w-[100px] h-[80px] rounded-md m-2 "
+              />
             </div>
           </li>
         ))}
