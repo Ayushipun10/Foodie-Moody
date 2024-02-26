@@ -5,6 +5,8 @@ import "../../../src/index.css";
 const RestaurantCard = (props) => {
   const { resData } = props;
 
+
+
   const { cloudinaryImageId, name, avgRating, cuisines, locality } =
     resData?.info;
 

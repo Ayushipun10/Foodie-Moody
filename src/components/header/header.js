@@ -6,48 +6,61 @@ import { CgPokemon } from "react-icons/cg";
 import { FaRegUser } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import Search from "../search/search";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import useRestaurantCardData from "../../utils/hooks/useRestaurantCardData";
 
-const Header = ({setInputSearchValue}) => {
-
-  
+const Header = ({ setInputSearchValue, setListChanged }) => {
   const [loginButton, setLoginButton] = useState("Login");
   const [searchHeading, setSearchHeading] = useState("Search");
-  const [showComponent, setShowComponent] = useState(false);
+  const [showComponent, setShowComponent] = useState(true);
   const [searchTextValue, setSearchTextProps] = useState("");
+
+  const listofRestaurant = useRestaurantCardData();
 
   function login() {
     loginButton === "Login"
       ? setLoginButton("Logout")
       : setLoginButton("Login");
-   
   }
 
- 
-   const searchFilter = () => {
-    
+  const searchFilter = () => {
     setShowComponent(!showComponent);
     searchHeading === "Search"
       ? setSearchHeading("")
       : setSearchHeading("Search");
 
+    const searching = listofRestaurant.filter((item) =>
+      item.info.name.toLowerCase().includes(searchTextValue.toLowerCase())
+    );
+
+    setListChanged(searching);
+    setSearchTextProps("");
+
     // setInputSearchValue(searchTextValue);
-  }
+  };
   return (
     <>
       <header className="header-styling">
-        <Link to="/"><img src={logo} className="logo-styling" /></Link>
+        <Link to="/">
+          <img src={logo} className="logo-styling" />
+        </Link>
         <div className="nav-container">
           <li className="nav-items">
-            {showComponent && <Search setSearchTextProps={setSearchTextProps} />}
+            {showComponent && (
+              <Search setSearchTextProps={setSearchTextProps} />
+            )}
             {<FaSearch onClick={searchFilter} />} {searchHeading}{" "}
           </li>
-          <li className="nav-items"><Link to="/help">{<CgPokemon />} Help</Link></li>
+          <li className="nav-items">
+            <Link to="/help">{<CgPokemon />} Help</Link>
+          </li>
           <li className="nav-items" onClick={() => login()}>
             {<FaRegUser />}
             {loginButton}
           </li>
-          <li className="nav-items"><Link to="/cart">{<IoCartOutline />} Cart</Link></li>
+          <li className="nav-items">
+            <Link to="/cart">{<IoCartOutline />} Cart</Link>
+          </li>
         </div>
       </header>
     </>

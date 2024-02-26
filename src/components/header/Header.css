@@ -23,12 +23,13 @@
 }
 .nav-container{
     display: flex;
-    
+   
 }
 .nav-items{
 
  padding-right: 40px;
  list-style: none;
+
 }
 
 

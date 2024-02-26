@@ -9,21 +9,38 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CartPage from "./cart/cart";
 import ErrorPage from "./error/error";
 import RestaturantMenu from "./menu/RestaurantMenu";
+import useRestaurantCardData from "../utils/hooks/useRestaurantCardData";
 
-
-const HelpPage = lazy(()=> import("./help/help"));
+const HelpPage = lazy(() => import("./help/help"));
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState();
   const [inputSearchValue, setInputSearchValue] = useState("");
 
+  const listofRestaurant = useRestaurantCardData();
+
+  const [listChanged, setListChanged] = useState([]);
+
+  useEffect(() => {
+    setListChanged(listofRestaurant);
+  }, [listofRestaurant]);
+
   return (
     <>
-      <Header setInputSearchValue={setInputSearchValue} />
-      <Filter setSelectedCategory={setSelectedCategory} />
+      <Header
+        setInputSearchValue={setInputSearchValue}
+        setListChanged={setListChanged}
+      />
+      <Filter
+        setSelectedCategory={setSelectedCategory}
+        setListChanged={setListChanged}
+        listChanged={listChanged}
+      />
       <Body
         selectedCategory={selectedCategory}
         inputSearchValue={inputSearchValue}
+        listChanged={listChanged}
+        setListChanged={setListChanged}
       />
     </>
   );
@@ -32,25 +49,29 @@ const App = () => {
 const appRouter = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
-    errorElement: <ErrorPage/>,
+    element: <App />,
+    errorElement: <ErrorPage />,
   },
   {
-    path:"/help",
-    element:<Suspense fallback={<h1>Loading...</h1>}><HelpPage /></Suspense> 
+    path: "/help",
+    element: (
+      <Suspense fallback={<h1>Loading...</h1>}>
+        <HelpPage />
+      </Suspense>
+    ),
   },
   {
-    path:"/cart",
-    element: <CartPage />
+    path: "/cart",
+    element: <CartPage />,
   },
   {
     path: "/restaurants/:resId",
-    element: <RestaturantMenu/>
+    element: <RestaturantMenu />,
   },
-])
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<App />);
 
-root.render(<RouterProvider router={appRouter}/>);
+root.render(<RouterProvider router={appRouter} />);
 // export default App;

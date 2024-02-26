@@ -37,7 +37,6 @@ const RestaturantMenu = () => {
     ) ||
     [];
 
-  console.log("again data checking", categories);
   return (
     <>
       <div>
@@ -50,10 +49,10 @@ const RestaturantMenu = () => {
           <h4 className="menu-text">{areaName}</h4>
         </div>
         <div className="menu-cards-recommended">
-          {categories.map((categorymenu, index) => (
+          {categories.map((categorymenu) => (
             <RestaturantMenuCategory
               data={categorymenu?.card?.card}
-              key={index}
+              key={categorymenu?.card?.card?.title}
             />
           ))}
         </div>
