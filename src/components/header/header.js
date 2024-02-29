@@ -9,7 +9,7 @@ import Search from "../search/search";
 import { Link } from "react-router-dom";
 import useRestaurantCardData from "../../utils/hooks/useRestaurantCardData";
 
-const Header = ({ setInputSearchValue, setListChanged }) => {
+const Header = ({ setInputSearchValue, setListChanged}) => {
   const [loginButton, setLoginButton] = useState("Login");
   const [searchHeading, setSearchHeading] = useState("Search");
   const [showComponent, setShowComponent] = useState(true);

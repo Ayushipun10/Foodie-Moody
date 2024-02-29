@@ -11,6 +11,8 @@ import RestaturantMenuCategory from "./RestaurantMenuCategory";
 const RestaturantMenu = () => {
   const { resId } = useParams();
 
+  const [showMenuCategoryIndex, setShowMenuCategoryIndex] = useState(0);
+  console.log("setindex", showMenuCategoryIndex);
   const restaurantMenuInfo = useRestaurantMenu(resId);
 
   if (restaurantMenuInfo === null) {
@@ -49,10 +51,16 @@ const RestaturantMenu = () => {
           <h4 className="menu-text">{areaName}</h4>
         </div>
         <div className="menu-cards-recommended">
-          {categories.map((categorymenu) => (
+          {categories.map((categorymenu, index) => (
             <RestaturantMenuCategory
               data={categorymenu?.card?.card}
               key={categorymenu?.card?.card?.title}
+              showMenuItems={index === showMenuCategoryIndex}
+              setShowMenuCategoryIndex={() => {
+                setShowMenuCategoryIndex(
+                  (prevIndex) => (prevIndex === index ? null : index) // Toggle the state
+                );
+              }}
             />
           ))}
         </div>

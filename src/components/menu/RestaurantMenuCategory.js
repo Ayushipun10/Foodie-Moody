@@ -3,13 +3,15 @@ import { IoIosArrowDown } from "react-icons/io";
 import MenuItemsList from "./MenuItemsList";
 import { useState } from "react";
 
-const RestaturantMenuCategory = ({ data }) => {
+const RestaturantMenuCategory = ({ data,showMenuItems, setShowMenuCategoryIndex }) => {
 
 
-    const [showMenuItems, setShowMenuItems] = useState(true);
+    // const [showMenuItems, setShowMenuItems] = useState(true);
 
     const handleClick=()=>{
-        setShowMenuItems(!showMenuItems)
+     
+      setShowMenuCategoryIndex()
+        // setShowMenuItems(!showMenuItems)
     }
   return (
     <div className="m-2">
@@ -22,7 +24,7 @@ const RestaturantMenuCategory = ({ data }) => {
             <IoIosArrowDown />
           </span>
         </div>
-        {showMenuItems && <MenuItemsList items={data?.itemCards} />}
+        { showMenuItems && <MenuItemsList items={data?.itemCards} />}
       </div>
     </div>
   );
