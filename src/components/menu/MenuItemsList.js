@@ -1,7 +1,21 @@
+import { useDispatch } from "react-redux";
 import "../../../src/index.css";
 import { CDN_URL } from "../../utils/constants";
+import { addItem } from "../../utils/slices/cartSlice";
+
+
 const MenuItemsList = ({ items }) => {
+
+  const dispatch = useDispatch()
+
+  const handleAddItem = (menuitems) => {
+    // dispatch an action
+    dispatch(addItem(menuitems))
+  }
+
+ 
   return (
+   
     <div className="m-2">
       <ul>
         {items.map((menuitems) => (
@@ -22,7 +36,7 @@ const MenuItemsList = ({ items }) => {
             </div>
             <div className="relative flex justify-center items-end">
               <div className="absolute ">
-                <button className=" bg-white w-[80px] text-[#60b246] font-arial rounded-md border-solid border-[#60b246] border">
+                <button className=" bg-white w-[80px] text-[#60b246] font-arial rounded-md border-solid border-[#60b246] border" onClick={()=>handleAddItem(menuitems)}>
                   ADD 
                 </button>
               </div>
@@ -35,6 +49,7 @@ const MenuItemsList = ({ items }) => {
         ))}
       </ul>
     </div>
+    
   );
 };
 export default MenuItemsList;

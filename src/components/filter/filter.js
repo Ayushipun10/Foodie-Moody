@@ -13,6 +13,7 @@ const Filter = (props) => {
         item.info.cuisines.includes(category) ||
         item.info.cuisines.includes(category + "s")
     );
+
     setListChanged(filterCards);
     // setSelectedCategory(filterCards);
     // setSelectedCategory(category);

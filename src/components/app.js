@@ -10,39 +10,47 @@ import CartPage from "./cart/cart";
 import ErrorPage from "./error/error";
 import RestaturantMenu from "./menu/RestaurantMenu";
 import useRestaurantCardData from "../utils/hooks/useRestaurantCardData";
+import UserContext from "../utils/context/UserContext";
+import { Provider } from "react-redux";
+import appStore from "../utils/store/appStore";
 
 const HelpPage = lazy(() => import("./help/help"));
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState();
   const [inputSearchValue, setInputSearchValue] = useState("");
-
   const listofRestaurant = useRestaurantCardData();
-
   const [listChanged, setListChanged] = useState([]);
+  const [userName, setUserName] = useState("");
 
   useEffect(() => {
+    const data = {
+      name: "Ayushi",
+    };
     setListChanged(listofRestaurant);
+    setUserName(data.name);
   }, [listofRestaurant]);
 
   return (
-    <>
-      <Header
-        setInputSearchValue={setInputSearchValue}
-        setListChanged={setListChanged}
-      />
-      <Filter
-        setSelectedCategory={setSelectedCategory}
-        setListChanged={setListChanged}
-        listChanged={listChanged}
-      />
-      <Body
-        selectedCategory={selectedCategory}
-        inputSearchValue={inputSearchValue}
-        listChanged={listChanged}
-        setListChanged={setListChanged}
-      />
-    </>
+    <Provider store={appStore}>
+      <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+        <Header
+          setInputSearchValue={setInputSearchValue}
+          setListChanged={setListChanged}
+        />
+        <Filter
+          setSelectedCategory={setSelectedCategory}
+          setListChanged={setListChanged}
+          listChanged={listChanged}
+        />
+        <Body
+          selectedCategory={selectedCategory}
+          inputSearchValue={inputSearchValue}
+          listChanged={listChanged}
+          setListChanged={setListChanged}
+        />
+      </UserContext.Provider>
+    </Provider>
   );
 };
 
@@ -73,5 +81,9 @@ const appRouter = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<App />);
 
-root.render(<RouterProvider router={appRouter} />);
+root.render(
+  <Provider store={appStore}>
+    <RouterProvider router={appRouter} />
+  </Provider>
+);
 // export default App;

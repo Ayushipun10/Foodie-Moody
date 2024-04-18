@@ -1,16 +1,14 @@
-.search-box-styling{
-    position: absolute; /* or use relative, fixed, etc. depending on your layout needs */
-    top: 30px; /* adjust as needed */
-    right: 25%; /* adjust as needed */
-    width: 20%;
+.search-box-styling {
+  position: absolute;
+  top: 30px;
+  right: 30%;
+  width: 20%;
 }
 
-.search-input-styling{
-    /* Add your desired styles for the input */
-    padding: 8px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    margin-left: 5px; /* Add margin to separate from the search icon */
-    width: 100%;
-
-  }
+.search-input-styling {
+  padding: 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-left: 5px;
+  width: 100%;
+}
