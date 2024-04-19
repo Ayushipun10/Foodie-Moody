@@ -10,10 +10,11 @@ import { Link } from "react-router-dom";
 import useRestaurantCardData from "../../utils/hooks/useRestaurantCardData";
 import UserContext from "../../utils/context/UserContext";
 import { useSelector } from "react-redux";
+import "../../../src/index.css";
 
 const Header = ({ setInputSearchValue, setListChanged }) => {
   const [loginButton, setLoginButton] = useState("Login");
-  const [searchHeading, setSearchHeading] = useState("Search");
+  // const [searchHeading, setSearchHeading] = useState("Search");
   const [showComponent, setShowComponent] = useState(true);
   const [searchTextValue, setSearchTextProps] = useState("");
 
@@ -21,9 +22,9 @@ const Header = ({ setInputSearchValue, setListChanged }) => {
 
   const { loggedInUser } = useContext(UserContext);
 
-  const CartItems = useSelector((store)=> store.cart.items)
+  const CartItems = useSelector((store) => store.cart.items);
 
-  console.log("cartitems", CartItems)
+  console.log("cartitems", CartItems);
 
   function login() {
     loginButton === "Login"
@@ -33,9 +34,9 @@ const Header = ({ setInputSearchValue, setListChanged }) => {
 
   const searchFilter = () => {
     setShowComponent(!showComponent);
-    searchHeading === "Search"
-      ? setSearchHeading("")
-      : setSearchHeading("Search");
+    // searchHeading === "Search"
+    //   ? setSearchHeading("")
+    //   : setSearchHeading("Search");
 
     const searching = listofRestaurant.filter((item) =>
       item.info.name.toLowerCase().includes(searchTextValue.toLowerCase())
@@ -47,33 +48,33 @@ const Header = ({ setInputSearchValue, setListChanged }) => {
     // setInputSearchValue(searchTextValue);
   };
   return (
-
     <>
       <header className="header-styling">
         <Link to="/">
           <img src={logo} className="logo-styling" />
         </Link>
         <div className="nav-container">
-          <li className="nav-items">
+          <li className="nav-items ">
             {showComponent && (
               <Search setSearchTextProps={setSearchTextProps} />
             )}
-            {<FaSearch onClick={searchFilter} />} {searchHeading}{" "}
+            {<FaSearch onClick={searchFilter} />}Search{" "}
           </li>
-          <li className="nav-items">
-            <Link to="/help">{<CgPokemon />} Help</Link>
+          <li className="nav-items ">
+            <Link to="/help">{<CgPokemon />}Help</Link>
           </li>
           <li className="nav-items" onClick={() => login()}>
             {<FaRegUser />}
             {loginButton}
           </li>
           <li className="nav-items">
-            <Link to="/cart">{<IoCartOutline />} Cart-{CartItems.length} items</Link>
+            <Link to="/cart">
+              {<IoCartOutline />}Cart-{CartItems.length} items
+            </Link>
           </li>
         </div>
       </header>
     </>
-
   );
 };
 

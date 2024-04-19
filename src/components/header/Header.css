@@ -21,10 +21,31 @@
 .logo-styling {
   height: 60px;
 }
+
 .nav-container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
 }
+
 .nav-items {
-  padding-right: 40px;
   list-style: none;
+  display: flex;
+  align-items: center;
+ 
+  /* margin-right: 30px;  */
 }
+.nav-items:last-child {
+  margin-right: 0; 
+}
+
+.nav-items a {
+  display: flex; 
+  align-items: center; 
+}
+
+.nav-items svg {
+  margin-right: 5px; 
+}
+
