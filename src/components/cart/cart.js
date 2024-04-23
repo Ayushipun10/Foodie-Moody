@@ -11,7 +11,7 @@ const CartPage = () => {
   const dispatch = useDispatch()
 
   const handleClearCart = () => {
-    dispatch(clearCart(CartItems))
+    dispatch(clearCart())
   }
   return (
     <>
@@ -19,8 +19,10 @@ const CartPage = () => {
       <Header />
       <div className="flex flex-col items-center">
       <div className="font-bold text-2xl text-orange-600 m-1">Grab Your Hunger</div>
-      <button className="flex items-center justify-center m-1 bg-orange-600 text-white w-[10%] h-[50px] rounded-md text-center font-bold" onClick= {()=>handleClearCart(CartItems)}>Clear Cart <MdRemoveShoppingCart className="ml-1"/></button>
+      {/* {CartItems.length > 0 && <div className="font-bold text-2xl text-orange-600 m-1">Grab Your Hunger</div>} */}
+      <button className="flex items-center justify-center m-1 bg-orange-600 text-white w-[10%] h-[50px] rounded-md text-center font-bold" onClick= {handleClearCart}>Clear Cart <MdRemoveShoppingCart className="ml-1"/></button>
       <div className="m-2 border-2 border-transparent hover:border-orange-600"><MenuItemsList items={CartItems}/></div>
+      {CartItems.length === 0 && <h1 className="font-bold text-2xl text-orange-600 m-1">Whoops! Nothing to satisfy your hunger pangs, foodies; add items to your cart.</h1>}
       </div>
     </>
   );
