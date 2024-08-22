@@ -13,6 +13,7 @@ const useRestaurantCardData = () => {
     );
     const json = await data.json();
 
+    console.log("restaurantapi data", json)
 
     setListofRestaurant(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants

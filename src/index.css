@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-customBlue {
+    @apply bg-[#37718e]; /* Tailwind's apply directive with custom value */
+}
