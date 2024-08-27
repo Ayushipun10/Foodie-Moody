@@ -21,19 +21,19 @@ const App = () => {
   const [inputSearchValue, setInputSearchValue] = useState("");
   const listofRestaurant = useRestaurantCardData();
   const [listChanged, setListChanged] = useState([]);
-  // const [userName, setUserName] = useState("");
+  const [userName, setUserName] = useState("");
 
   useEffect(() => {
-    // const data = {
-    //   name: "Ayushi",
-    // };
+    const data = {
+      name: "Ayushi",
+    };
     setListChanged(listofRestaurant);
-    // setUserName(data.name);
+    setUserName(data.name);
   }, [listofRestaurant]);
 
   return (
     <Provider store={appStore}>
-      <UserContext.Provider>
+      <UserContext.Provider  value={{ loggedInUser: userName, setUserName }}>
         <Header
           setInputSearchValue={setInputSearchValue}
           setListChanged={setListChanged}

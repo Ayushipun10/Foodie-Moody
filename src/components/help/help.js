@@ -3,12 +3,14 @@ import UserClass from "../user/userClass";
 import Header from "../header/Header";
 import "../../../src/index.css";
 import { useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
+
+import PartnerOnboarding from "./PartnerOnboarding";
+import Legal from "./Legal";
+import Faq from "./Faq";
+import InstamartOnboarding from "./InstamartOnboarding";
 
 const HelpPage = () => {
   const [selectedSection, setSelectedSection] = useState("partnerOnboarding");
-  const [isActive, setIsActive] = useState(true);
-
   // Handler function for clicking on a section
   const handleClick = (section) => {
     setSelectedSection(section);
@@ -17,32 +19,34 @@ const HelpPage = () => {
     <>
       <div>
         <Header />
-        <div className="bg-customBlue text-white p-2 h-[100vh]">
-          <h1>Help page</h1>
-          <h4>Let's take a step ahead and help you better</h4>
+        <div className="bg-customBlue text-white p-2 h-[100vh] ">
+          <h1 className="font-bold text-3xl m-4">Help & Support</h1>
+          <h4 className="text-m m-4">
+            Let's take a step ahead and help you better
+          </h4>
           <div className="bg-white text-black flex p-4 h-[80vh]">
-            <div className="bg-gray-300 w-[20%] p-2 m-2">
+            <div className="bg-gray-300 w-[20%] p-2 m-2 text-gray-500">
               <li className="p-4 list-none">
                 <ul
-                  className="p-3  hover:bg-white"
+                  className="p-3  hover:bg-white hover:font-bold"
                   onClick={() => handleClick("partnerOnboarding")}
                 >
                   Partner Onboarding
                 </ul>
                 <ul
-                  className="p-3  hover:bg-white "
+                  className="p-3  hover:bg-white  hover:font-bold"
                   onClick={() => handleClick("legal")}
                 >
                   Legal
                 </ul>
                 <ul
-                  className="p-3  hover:bg-white"
+                  className="p-3  hover:bg-white  hover:font-bold"
                   onClick={() => handleClick("faq")}
                 >
                   FaQ's
                 </ul>
                 <ul
-                  className="p-3  hover:bg-white"
+                  className="p-3  hover:bg-white  hover:font-bold"
                   onClick={() => handleClick("instamartOnboarding")}
                 >
                   Instamart Onboarding
@@ -50,35 +54,11 @@ const HelpPage = () => {
               </li>
             </div>
             <div className="m-2 p-8 w-[70%]">
-              {selectedSection === "partnerOnboarding" && (
-                <div className="border-b-2">
-                  <h1>Partner Onboarding</h1>
-                  <div
-                    className="accordion title flex justify-between w-[100%]"
-                    onClick={() => setIsActive(!isActive)}
-                  >
-                    <p>
-                      What are the mandatory documents needed to list my
-                      restaurant on Swiggy?
-                    </p>
-                    <span className="m-3">
-                      <IoIosArrowDown />
-                    </span>
-                  </div>
-                  {isActive && (
-                    <div className="accordion-content">
-                      <p>
-                        What are the mandatory documents needed to list my
-                        restaurant on Swiggy?
-                      </p>
-                    </div>
-                  )}
-                </div>
-              )}
-              {selectedSection === "legal" && <div>Legal </div>}
-              {selectedSection === "faq" && <div>FaQ's </div>}
+              {selectedSection === "partnerOnboarding" && <PartnerOnboarding />}
+              {selectedSection === "legal" && <Legal/>}
+              {selectedSection === "faq" && <Faq/>}
               {selectedSection === "instamartOnboarding" && (
-                <div>Instamart Onboarding</div>
+                <InstamartOnboarding/>
               )}
             </div>
           </div>
